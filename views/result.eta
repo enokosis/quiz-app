@@ -19,4 +19,4 @@
 
 <% } else {%> <h1>Correct!</h1>
 <% } %>
-<h3> <a href="/quiz" >Go to the next question</a> </h3> 
+<h3> <a href="/quiz" >Next question</a> </h3> 

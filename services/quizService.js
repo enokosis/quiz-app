@@ -6,7 +6,8 @@ const randomQuiz = async () => {
       ORDER BY RANDOM()
       LIMIT 1`,
   );
-  const questionId = res.rows[0].id;
+  let questionId = -1;
+  if (res.rows[0] != undefined) questionId = res.rows[0].id;
   return questionId;
 };
 

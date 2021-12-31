@@ -70,7 +70,7 @@ const deleteQuestion = async ({ response, params, user }) => {
     params.id,
     user.id,
   );
-  response.redirect(`/questions/`);
+  response.redirect(`/questions`);
 };
 
 export { addAnswerOption, deleteAnswerOption, deleteQuestion, getQuestion };

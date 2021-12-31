@@ -1,8 +1,7 @@
 import { Pool } from "../deps.js";
-import { database } from "../config/config.js";
 
 const CONCURRENT_CONNECTIONS = 2;
-const connectionPool = new Pool(database, CONCURRENT_CONNECTIONS);
+const connectionPool = new Pool({}, CONCURRENT_CONNECTIONS);
 
 const executeQuery = async (query, ...args) => {
   const response = {};

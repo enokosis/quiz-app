@@ -2,8 +2,8 @@ Web Software Development Course Project 2
 
 To start the server on your machine follow the steps
 
-1. Configure config/config.js file with your SQL server config one database for
-   production and another one for testing
+1. Configure config/database.js file with your SQL server config. When testing
+   it is recomended to use different SQL server config
 
 2. Create the following tables on the sql server.
 

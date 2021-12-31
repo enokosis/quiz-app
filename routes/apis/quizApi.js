@@ -2,8 +2,18 @@ import * as quizService from "../../services/quizService.js";
 
 const getQuestion = async ({ response }) => {
   const randomQuestionId = await quizService.randomQuiz();
+  if (randomQuestionId === -1) {
+    response.body = {};
+    return;
+  }
   const byIdQuiz = await quizService.byIdQuiz(randomQuestionId);
-  const ret = {
+  let ret = {
+    questionId: {},
+    questionTitle: {},
+    questionText: {},
+    answerOptions: [],
+  };
+  ret = {
     questionId: randomQuestionId,
     questionTitle: byIdQuiz.question.title,
     questionText: byIdQuiz.question.question_text,
@@ -16,6 +26,7 @@ const getQuestion = async ({ response }) => {
     };
     ret.answerOptions.push(block);
   }
+
   response.body = ret;
 };
 
