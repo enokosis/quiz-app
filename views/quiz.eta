@@ -1,0 +1,23 @@
+<% layout('./layouts/layout.eta') %>
+<% if (it.question) { %>
+<h1>Title: <%= it.question.title %> </h1>
+<h2>Question text: <%= it.question.question_text %> </h2>
+
+
+    <% if (it.options && it.options.length > 0) { %>
+    <h2>Choose any right option</h2>
+    <table>
+        <% it.options.forEach(option => { %>
+        <tr>
+            <td><%= option.option_text %></td>
+            <td><form method="POST" action="/quiz/<%= it.question.id %>/options/<%= option.id %>">
+                <input type="submit" value="Choose"/></form></td>
+        </tr>
+        <% }) %>
+        </table>
+    <% }  else { %> <h3> No answer options here </h3>
+        <h3> <a href="/quiz" >Go to the next question</a> </h3> 
+        <% } %>
+
+<% } else {%> <h1> There are no questions so far</h1>
+<% } %>

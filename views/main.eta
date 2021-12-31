@@ -1,0 +1,8 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Chore application</h1>
+
+<p>This is an application for creating and answering multiple-choice questions. Anyone using the application can create multiple-choice question , or answer questions made by others in a form quiz.</p>
+
+<p>If you haven't used the application before, you can start by <a href="/auth/register">registering</a>. If you have been here before, just <a href="/auth/login">log in</a>!</p>
+

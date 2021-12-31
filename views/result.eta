@@ -1,0 +1,22 @@
+<% layout('./layouts/layout.eta') %>
+<% if (it.rightAnswers && !it.right) { %>
+<h1>Incorrect!</h1>
+    <% if (it.rightAnswers && it.rightAnswers.length > 0) { %>
+<h3>Right answers are:</h3>
+<table>
+<% it.rightAnswers.forEach(option => { %>
+<tr>
+    <td><%= option.option_text %></td>
+</tr>
+<% }) %>
+</table>
+
+<% } else { %>
+
+<p>No right answer for the question</p>
+
+<% } %>
+
+<% } else {%> <h1>Correct!</h1>
+<% } %>
+<h3> <a href="/quiz" >Go to the next question</a> </h3> 
