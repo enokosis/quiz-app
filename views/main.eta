@@ -1,6 +1,6 @@
 <% layout("./layouts/layout.eta") %>
 
-<h1>Chore application</h1>
+<h1>Quiz application</h1>
 
 <p>This is an application for creating and answering multiple-choice questions. Anyone using the application can create multiple-choice question , or answer questions made by others in a form quiz.</p>
 

@@ -1,7 +1,8 @@
 <% layout("./layouts/layout.eta") %>
+<h1>Registration form</h1>
 <% if (it.validationErrors) { %>
 
-<h1>Registration form</h1>
+
 <ul>
     <% Object.keys(it.validationErrors).forEach((attribute) => { %>
         <% Object.values(it.validationErrors[attribute]).forEach((err) => { %>
@@ -18,4 +19,5 @@
   <input type="submit" value="Register" />
 </form>
 
-<a href="/auth/register">Not yet registered? Register here.</a>
+<a href="/auth/login">Already registered? Login here.</a>
+

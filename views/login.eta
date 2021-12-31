@@ -10,4 +10,4 @@
   <input type="submit" value="Login" />
 </form>
 
-<a href="/auth/login">Already registered? Login here.</a>
+<a href="/auth/register">Not yet registered? Register here.</a>
