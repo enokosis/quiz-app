@@ -1,8 +1,8 @@
-Web Software Development Course Project 2
+This is an application for creating and answering multiple-choice questions.
 
 To start the server on your machine follow the steps
 
-1. Configure config/database.js file with your SQL server config. When testing
+1. Configure database/database.js file with your SQL server config. When testing
    it is recomended to use different SQL server config
 
 2. Create the following tables on the sql server.
@@ -30,5 +30,5 @@ App will be lauched http://localhost:7777 by default
 
 Test can be run from app_test.js file
 
-Check the below link for the same application deployed in heroku:
-https://pr2-quiz.herokuapp.com/projects
+Check the below link for the same application deployed in Heroku:
+https://pr2-quiz.herokuapp.com/
